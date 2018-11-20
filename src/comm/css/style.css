@@ -1,0 +1,31 @@
+html{
+    font-size: 13.333333vw;
+}
+body{
+    margin:0;
+    -webkit-text-size-adjust: none;
+    font-size: .36rem;
+}
+p,h1,h2,h3,h4,dl,dt,dd{
+    margin:0;
+}
+ul{
+    list-style: none;
+    padding:0;
+}
+a{
+    text-decoration: none;
+}
+a,input{
+    -webkit-tap-highlight-color: rgba(0,0,0,0);
+    -webkit-appearance: none;
+}
+.clearfix:before{
+    content: '';
+    display: table;
+}
+.clearfix:after{
+    content: '';
+    display: table;
+    clear: both;
+}
