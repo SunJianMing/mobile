@@ -1,16 +1,33 @@
-import React, { Component } from 'react';
-import './style.css'
-import '../fonts/iconfont.css'
+import React, {Component} from 'react';
+import {Link} from 'react-router-dom'
+
+
 class Header extends Component {
-    state = {  }
-    render() { 
-        return ( 
+    state = {}
+    render() {
+        console.log(this.props);
+        let {back, login} = this.props;
+        return (
             <header className='header'>
-                <button type='button' className='header-menu iconfont icon-navmenuicon'></button>
-                <button type='button' className='header-back iconfont icon-back'></button>
+                <button
+                    type='button'
+                    className='header-btn-left headerMenu iconfont icon-navmenuicon'></button>
+                {back && (
+                    <button type='button' className='header-btn-left back iconfont icon-back'></button>
+                )}
+                <img className='logo' src={require('./img/logo.png')} alt=""/> {
+                    login
+                    ? (
+                        <span className='header-btn-right'>miaov</span>
+                    )
+                    : (
+                        <Link to='/login' className='header-btn-right user-login iconfont icon-denglu'></Link>
+                    )
+                }
+
             </header>
-         );
+        );
     }
 }
- 
+
 export default Header;

@@ -7,9 +7,9 @@ import {
 
 import * as serviceWorker from './serviceWorker';
 
-
+import './comm/fonts/iconfont.css'
 import './comm/css/style.css'
-
+import './comm/components/style.css'
 ReactDOM.render( 
     <Router basename='/'>
         <App />
