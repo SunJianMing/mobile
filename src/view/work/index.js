@@ -3,7 +3,7 @@ import React, { Component } from 'react';
 class Work extends Component {
     state = {  }
     render() { 
-        return ( '作品' );
+        return ( <div>作品</div> );
     }
 }
  

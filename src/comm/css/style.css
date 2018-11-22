@@ -16,6 +16,16 @@ ul{
 a{
     text-decoration: none;
 }
+button{
+    outline: none;
+    padding:0;
+    border:0;
+    background-color: transparent;
+}
+a,span,i,b,s{
+    display: inline-block;
+    vertical-align: top;
+}
 a,input{
     -webkit-tap-highlight-color: rgba(0,0,0,0);
     -webkit-appearance: none;
@@ -28,4 +38,7 @@ a,input{
     content: '';
     display: table;
     clear: both;
+}
+div,span,i,b,p,li,h1,h2,h3,h4,dl,dt,dd{
+    line-height: 1;
 }

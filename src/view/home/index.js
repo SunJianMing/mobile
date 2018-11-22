@@ -1,9 +1,13 @@
 import React, { Component } from 'react';
+import Header from '../../comm/components/header'
+
 
 class Home extends Component {
     state = {  }
     render() { 
-        return ( '首页' );
+        return ( 
+            <Header/>
+        );
     }
 }
  
