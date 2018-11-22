@@ -1,0 +1,12 @@
+.curriculum{
+    padding:.2rem .2rem 0;
+    display:flex;
+    justify-content:space-between;
+    flex-wrap:wrap;
+}
+.curriculum li{
+    width:3.45rem;
+    height:6.38rem;
+    background-color: #999;
+    margin-bottom: .2rem;
+}

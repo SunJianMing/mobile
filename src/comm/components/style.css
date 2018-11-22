@@ -125,6 +125,7 @@
     background:url(./img/menu-bg.png) no-repeat;
     background-size: 100% 100%;
     padding: 1.5rem .5rem 0;
+    z-index: 1;
 }
 .menu a{
     font-size: .3rem;
@@ -139,4 +140,45 @@
 .menu a:before{
     font-size: .4rem;
     padding:0 .1rem;
+}
+
+.tab{
+    position: relative;
+    overflow: hidden;
+}
+.picList{
+    width: 400vw;
+    font-size: 0;
+    overflow: hidden;
+}
+.picList li{
+    width:100vw;
+    display: inline-block;
+    overflow: hidden;
+}
+.picList img{
+    width:100vw;
+    display: block;
+}
+.picNav{
+    position: absolute;
+    width:100vw;
+    left:0;
+    height:.1rem;
+    bottom:.2rem;
+    text-align: center;
+}
+.picNav span{
+    width:.3rem;
+    height:.1rem;
+    background-color: rgba(255,255,255,.5);
+    margin:0 .1rem;
+}
+.picNav span.active{
+    background-color: #fff;
+}
+
+
+.banner img{
+    height: 4.6rem;
 }

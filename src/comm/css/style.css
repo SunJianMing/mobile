@@ -12,6 +12,7 @@ p,h1,h2,h3,h4,dl,dt,dd{
 ul{
     list-style: none;
     padding:0;
+    margin:0;
 }
 a{
     text-decoration: none;
@@ -49,11 +50,15 @@ div,span,i,b,a,li,ul,p,h1,h2,h3,h4,h5,h6,dl,dt,dd,input,button,textarea,header,n
 
 
 .page{
+    position: relative;
     padding-top:.9rem;
-    height: 100vh;
+    min-height: 100vh;
     display: flex;
     flex-direction: column;
+    z-index: 50;
+    background-color: #f2f9fc;
 }
 .page-con{
     flex:1;
 }
+
